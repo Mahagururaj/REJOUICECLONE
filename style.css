@@ -1,0 +1,547 @@
+@font-face {
+    font-family: Rejou ;
+    src: url(./font/Rejouice-Headline.woff2);
+}
+@font-face {
+    font-family: nb ;
+    src: url(./font/NBInternationalProBoo.woff2);
+}
+
+* {
+    font-family: 'Times New Roman';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.loader {
+    height:100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+.loader h3 {
+    font-family: nb;
+    font-size: 3vw;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.cursor{
+    position: fixed;
+    height: 7.5vw;
+    width: 7.5vw;
+    background: #f84214;
+    border-radius: 50%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+.cursor h3{
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: nb;
+}
+.page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content{
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+nav h3,a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    font-family: nb;
+    font-weight: 400;
+    color: #ffff;
+}
+.page1-content h1{
+    line-height: 15vw;
+}
+.page1-content h1 span{
+    font-size: 28vw;
+    color: #ffff;
+    display: inline-block;
+    font-family: Rejou;
+    font-weight: 100;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    padding: 1vw 2vw;
+}
+.page2-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 2vw;
+    padding-bottom: 1vw;
+    border-bottom: 2px solid #9c9b99d4;
+}
+.page2-cont h3{
+    color: rgb(12, 12, 12);
+    font-size: 1.5vw;
+    font-weight: 200;
+    font-family: nb;
+
+}
+.page2-bottm{
+    width: 100vw;
+    overflow: hidden;
+}
+.elem{
+    padding: 2vw 3vw;
+    overflow: hidden;
+}
+.elem h1 .up{
+    overflow: hidden;
+}
+.elem h1 .up span{
+    font-size: 4vw;
+    font-family: nb;
+    line-height: 1;
+    display: inline-block;
+    font-weight: lighter;
+    overflow: hidden;
+
+}
+.elem h1 span:nth-last-child(1){
+    padding-bottom: 5px;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 15vw 2vw;
+}
+.page3-top{
+    text-align: center;
+    padding-bottom: 10vw;
+}
+.page3-top h4{
+    padding-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: nb;
+}
+.page3-top h4 span{
+    font-size: 0.7vw;
+    background: #000;
+    color: #ffff;
+    font-family: nb;
+    margin-left: 2px;
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+.page3-top h4>i{
+    font-size: 0.99vw;
+    margin-left: 5px;
+    color: #1c1b1be3;
+    
+}
+.page3-top h2{
+    line-height: 4.5vw;
+    font-size: 4.3vw;
+    font-family: nb;
+    font-weight: 400;
+   
+}
+.page3-elem-top{
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw 3vw;
+}
+.page3-elem-top h2{
+    font-size: 1.5vw;
+    font-family: nb;
+    font-weight: 400;
+}
+.page3-elements{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    color: #ffff;
+}
+.page3-elements .box{
+    height: 100%;
+    background: blue;
+    width: 31.5%;
+    position: relative;
+    transition: 1s all linear;
+}
+.page3-elements .box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page3-elements .box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page3-elements .box:hover img{
+    opacity: 0;
+}
+.page3-cont{
+    padding: 10vw 4vw;
+    padding-bottom: 1vw;
+    border-bottom: 2px solid #9c9b99d4;
+}
+.page3-cont h3{
+    color: rgb(12, 12, 12);
+    font-size: 1.5vw;
+    font-weight: 200;
+    font-family: nb;
+
+}
+.page3-bottm{
+    width: 100vw;
+    overflow: hidden;
+}
+.page3-elem{
+    padding: 2vw 2vw;
+    overflow: hidden;
+}
+.page3-elem h1 .p3-up{
+    overflow: hidden;
+}
+.page3-elem h1 .p3-up span{
+    font-size: 4vw;
+    font-family: nb;
+    line-height: 1;
+    display: inline-block;
+    font-weight: lighter;
+    overflow: hidden;
+
+}
+.page3-elem h1 .p3-up span:nth-last-child(1){
+    padding-bottom: 0.8vw;
+}
+
+.page4{
+    min-height: fit-content;
+    width: 100%;
+    position: relative;
+    padding: 0vw 2vw;
+    
+}
+.p4-center{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page4 video{
+    height: 150%;
+}
+.page4 svg{
+    position: absolute;
+    height: 80%;
+}
+.page4 h5{
+    font-size: 2.5vw;
+    font-family: nb;
+    font-weight: bold;
+    background: #ffff;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    color:#1d0aed ;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+
+}
+.page4-cont{
+    padding: 10vw 4vw;
+    padding-bottom: 1vw;
+    border-bottom: 2px solid #9c9b99d4;
+}
+.page4-cont h3{
+    color: rgb(12, 12, 12);
+    font-size: 1.5vw;
+    font-weight: 200;
+    font-family: nb;
+
+}
+.page4-bottm{
+    width: 100vw;
+    overflow: hidden;
+}
+.page4-elem{
+    padding: 2vw 2vw;
+    overflow: hidden;
+}
+.page4-elem h1 .p4-up{
+    overflow: hidden;
+}
+.page4-elem h1 .p4-up span{
+    font-size: 4vw;
+    padding-bottom: 1vw;
+    font-family: nb;
+    line-height: 1;
+    display: inline-block;
+    font-weight: lighter;
+    overflow: hidden;
+
+}
+.page3-elem h1 .p3-up span:nth-last-child(1){
+    padding-bottom: 0.8vw;
+}
+.page5{
+    width: 100%;
+    height: 100vh;
+}
+.page5 h1{
+    font-size: 9vw;
+    margin: 0vw 2vw;
+    font-weight: 600;
+    font-family: nb;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid #000000e9;
+    
+}
+.page5 .swiperdiv{
+    position: relative;
+    height: 100vh;
+    margin-top: -5%;
+}
+
+.swiper {
+    width: 100vw;
+}
+
+.swiper-slide img{
+    width:100%;
+}
+.swiper-wrapper {
+    align-items:baseline;
+    position: relative;
+    z-index: 10;
+}
+.page6{
+    height: fit-content;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.page6 .page6-text{
+    overflow: hidden;
+    height: 155px;
+}
+.page6 .page6-text h4{
+    color: #161616;
+    font-family: nb;
+    font-weight: lighter;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.page6 .page6-text h4 i{
+    color: #161616;
+    margin-top: 2px;
+}
+.page6 .page6-text h1{
+    cursor: pointer;
+    font-family: nb;
+    font-size: 4vw;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+.page6 .page6-text h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: #000000;
+    transition: transform .4s ease-out;
+}
+.page6 .page6-text h1:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.footer{
+    height: 100vh;
+    width: 100vw;
+    background-color:#0E0E0E;
+}
+.footer .footer-top{
+    height: 65vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-top .first{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15vw;
+    padding: 2.5vw;
+    color: #fff;
+}
+.footer-top .first .first-top h2{
+    font-weight: lighter;
+    letter-spacing: -.5px;
+    font-family: nb;
+}
+.footer-top .first .first-top button{
+    padding:  15px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: nb;
+    border: 1px solid #fff;
+    font-size: 1.1vw;
+    font-weight: lighter;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.footer-top .first .first-top button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.footer-top .first .first-btm h4{
+    font-weight: lighter;
+    font-family: nb;
+}
+.footer-top .second{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: -2.5vw;
+    padding-right: 3vw;
+    color: #fff;
+}
+.second .second-one{
+    display: flex;
+    flex-direction: column;
+    gap: 15vw;
+}
+.second .second-one .span span{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.second .second-one .span>span::after,.second .second-one .span1>span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.second .second-one .span>span:hover::after,.second .second-one .span1>span:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.second .second-two{
+    display: flex;
+    flex-direction: column;
+    gap: 17.5vw;
+}
+.second .second-two .span span{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.second .second-two .span>span::after,.second .second-two .span1>span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+}
+.second .second-two .span>span:hover::after,.second .second-two .span1>span:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.second .second-two .span1{
+    position: relative;
+    cursor: pointer;
+}
+.second .second-one .span1{
+    position: relative;
+    cursor: pointer;
+}
+.footer .footer-bottom{
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.footer .footer-bottom h1 span{
+    display: inline-block;
+   font-size: 18vw;
+   margin-top: -3.2vw;
+   color: #fff;
+   font-family: Rejou;
+}

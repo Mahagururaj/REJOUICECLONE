@@ -1,0 +1,167 @@
+@media (max-width:800px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .page1{
+        height: 45vh;
+    }
+    .cursor{
+        height: 7.8vw;
+        width: 7.8vw;
+    }
+    .cursor h3{
+        font-size: 1.5vw;
+    }
+    nav h3,a{
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    .page1-content h1{
+        line-height: 20vw;
+    }
+    .page2{
+        height: 50vh;
+    }
+    .page2-cont h3{
+        font-size: 2vw;
+        font-weight: 500;
+    
+    }
+  
+    .elem h1 .up span{
+        line-height: 4vw;
+    
+    }
+    .page3{
+        min-height: 50vh;
+        width: 100%;
+    }
+    .page3-top h4{
+        padding-bottom: 1vw;
+       
+    }
+    .page3-top h4 span{
+        font-size: 1vw;
+    }
+    .page3-top h4>i{
+        font-size: 2vw;        
+    }
+    .page3-top h2{
+        padding-top: 1vw;
+    }
+    .page3-elem-top{
+        margin-top: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5vw 2vw;
+    }
+    .page3-elem-top h2{
+        font-size: 2vw;
+        font-family: nb;
+        font-weight: 400;
+    }
+    .page3-elements{
+        height: 50vh;
+    }
+    .page3-cont h3{
+        font-size: 2vw;
+        font-weight: 400;
+    }
+    .p4-center{
+        width: 100%;
+        height: 70vh;
+    }
+    .page4 video{
+        height: 75%;
+    }
+    .page4 svg{
+        height: 45%;
+    }
+    .page4 h5{
+        font-size: 4vw;
+    }
+    .page4-cont{
+        padding: 4vw 4vw;
+    }
+    .page4-cont h3{
+        font-size: 2vw;
+        font-weight: 300;    
+    }
+    .page4-bottm{
+        padding-bottom: 6vw;
+    }
+
+    .page5{
+        width: 100%;
+        height: 50vh;
+    }
+    .page5 h1{
+        font-size: 9.5vw;       
+    }
+    .swiper {
+        width: 140vw;
+    }
+    .page6{
+        min-height: 50vh;
+        width: 100%;
+    }
+    .page6 .page6-text{
+        height: 100px;
+    }
+    .footer{
+        height: 100%;
+        width: 100%;
+        background-color:#0E0E0E;
+    }
+    .footer .footer-top{
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+   
+    }
+    .footer-top .first{
+        flex-direction: row;
+    }
+
+    .footer-top .first .first-top button{
+        border-radius: 20px;
+        font-size: 1.8vw;
+    }
+    .footer-top .second{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        padding-right: 3vw;
+        color: #fff;
+    }
+    .second .second-one{
+        display: flex;
+        flex-direction: column;
+        gap: 15vw;
+    }
+    .second .second-two{
+        gap: 24.5vw;
+    }
+    .footer .footer-bottom{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .footer .footer-bottom h1 span{
+        display: inline-block;
+       font-size: 18vw;
+       margin-top: -3.2vw;
+       color: #fff;
+    }
+    
+    
+    
+}
