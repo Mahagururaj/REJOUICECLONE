@@ -3,6 +3,11 @@
         overflow-x: hidden;
     }
 
+    .loader h3 {
+        font-family: nb;
+        font-size: 6vw;
+    }
+
     .page1{
         height: 45vh;
     }
