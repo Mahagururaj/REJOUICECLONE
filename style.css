@@ -327,7 +327,7 @@ nav h3,a{
     overflow: hidden;
 
 }
-.page3-elem h1 .p3-up span:nth-last-child(1){
+.page4-elem h1 .p4-up span:nth-last-child(1){
     padding-bottom: 0.8vw;
 }
 .page5{
@@ -346,6 +346,7 @@ nav h3,a{
 .page5 .swiperdiv{
     position: relative;
     height: 100vh;
+    overflow: hidden;
     margin-top: -5%;
 }
 
